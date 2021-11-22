@@ -1,5 +1,31 @@
-/* .col {
-    min-height: 700px;
-    background-color: aqua;
-    border: 1px solid black;
-} */
+header {
+    padding:15px 80px 30px;
+    .logo {
+        height: 85px;
+    }
+    nav {
+        ul {
+            list-style: none;
+            font-weight: 400;
+            letter-spacing: 2px;
+            li {
+                color: $dark_grey;
+
+            &.active a{
+                color: $yellow;
+            }
+            a {
+                text-decoration: none;
+                color: $dark_grey;
+                margin: 0 20px;
+                
+            }
+            
+        }
+        }
+    }
+    & li:last-child a {
+        background-color: $yellow;
+        padding: 14px 40px;
+    }
+}
