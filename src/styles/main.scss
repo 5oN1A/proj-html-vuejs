@@ -37,21 +37,6 @@
     padding-top: calc($length_30 * 4);
     color: $dark_grey;
 
-    .after_line {
-        position: relative;
-
-        &:after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            right: 50%;
-            height: 5px;
-            width: 180px;
-            transform: translateX(50%);
-            border-top: 2px solid $yellow;
-        }
-    }
-
     .block {
         background-color: $background_grey;
         border-radius: 5px;
@@ -82,7 +67,7 @@
     .feature {
         i {
             color: $yellow;
-            font-size: 70px;
+            font-size: 65px;
         }
         h1 {
             font-weight: 400;
@@ -95,5 +80,115 @@
 }
 
 .section_5 {
+    padding-top: $length_50;
+}
 
+.section_6 {
+    background-color: $background_grey;
+    padding: $length_50 0;
+
+    .circle-icon {
+        background: #ffc0c0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 100px;
+        font-size: 58px;
+        color: $white;
+    }
+
+    .quality {
+        h6 {
+            font-weight: 300;
+        }
+
+        hr {
+            width: 20px;
+            text-align: center;
+            display: inline-block;
+            height: 1px;
+            line-height: 0;
+        }
+    }
+}
+
+.section_7 {
+    background-image: url(./assets/home-parallax-144609983.jpg);
+    padding: calc($length_50 * 4) 0;
+    background-size: cover;
+    h2 {
+        color: $white;
+    }
+    .round-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    p {
+        color: $white;
+        font-size: 16px;
+    }
+}
+.section_8 {
+    padding: $length_50 0;
+    background-color: $background_grey;
+
+    .card {
+        border: none;
+        text-align: justify;
+        color: $dark_grey;
+        min-height: 500px;
+        border-radius: 0;
+        width: 100%;
+
+        img {
+            border-radius: 0;
+        }
+        .card-date {
+            font-size: 10px;
+            text-align: left;
+        }
+    }
+}
+.section_9 {
+    padding: $length_50 0;
+    .partner {
+        width: 100%;
+        text-align: center;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.section_10 {
+    padding: $length_50 0;
+    background-image: url(./assets/about-call-to-action-57862405.jpg);
+    background-size: cover;
+    background-position-y: center;
+
+    .after_line {
+        position: relative;
+    
+        &:after {
+            left:0;
+            transform: translateX(0);
+        }
+    }
+    h2 {
+        color: $white;
+
+    }
+    h5 {
+        color: $white;
+        font-weight: 300;
+    
+    }
+    .my_btn_yellow {
+        padding: 14px 40px;
+    }
+    p {
+        color: $white
+    }
 }

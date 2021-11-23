@@ -14,11 +14,15 @@ h3 {
     font-size: 26px;
     font-weight: 400;
 }
+
 h6 {
-    font-size: 16px;
+    font-size: 14px;
 }
 p {
     font-size: 12px;
+    line-height: 25px !important;
+    text-align: center;
+    color: $dark_grey;
 }
 
 .my_btn {
@@ -35,3 +39,22 @@ p {
     color: black;
     background-color: $yellow;
 } 
+.after_line {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        height: 5px;
+        width: 180px;
+        transform: translateX(50%);
+        border-top: 2px solid $yellow;
+    }
+}
+.see-more {
+    letter-spacing: 2px;
+    margin: calc($length_30 * 2) 0;
+}
+
