@@ -22,12 +22,12 @@ export default {
 </script>
 
 <style lang="scss">
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/css/font-awesome.css";
 @import 'styles/variables';
 @import 'styles/header';
 @import 'styles/main';
 @import 'styles/footer';
 @import 'styles/utilities';
-@import "~bootstrap/scss/bootstrap";
-@import "~font-awesome/css/font-awesome.css";
 
 </style>

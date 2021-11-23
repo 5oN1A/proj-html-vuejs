@@ -1,1 +1,99 @@
+@import "variables";
 
+.section_1 {
+    background-image: url(./assets/home-slider-62528242.jpg);
+    padding: calc($length_30 * 10) 0;
+    background-size: cover;
+
+    h1 {
+        padding-bottom: $length_30;
+    }
+
+    h3 {
+        padding-bottom: $length_40;
+        color: $yellow;
+    }
+
+    .my_btn {
+        padding: 13px 45px;
+        font-size: 18px;
+    }
+}
+.section_2 {
+    padding: $length_50;
+    background-color: $yellow;
+    position: relative;
+    color: $dark_grey;
+
+    a {
+        padding: 9px 24px;
+        position: absolute;
+        transform: translate(-50%, 24px);
+    }
+}
+
+.section_3 {
+    background-color: $white;
+    padding-top: calc($length_30 * 4);
+    color: $dark_grey;
+
+    .after_line {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 50%;
+            height: 5px;
+            width: 180px;
+            transform: translateX(50%);
+            border-top: 2px solid $yellow;
+        }
+    }
+
+    .block {
+        background-color: $background_grey;
+        border-radius: 5px;
+        min-height: 200px;
+
+        .icon_wrapper {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid grey;
+            display: inline-block;
+
+            i {
+                border-radius: 50%;
+                vertical-align: middle;
+                font-size: 16px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+.section_4 {
+    background-image: url(./assets/home-244125289.jpg);
+    padding: calc($length_50 * 4) 0;
+    background-size: cover;
+
+    .feature {
+        i {
+            color: $yellow;
+            font-size: 70px;
+        }
+        h1 {
+            font-weight: 400;
+            color: $yellow;
+        }
+        h6 {
+            color: $white;
+        }
+    }
+}
+
+.section_5 {
+
+}

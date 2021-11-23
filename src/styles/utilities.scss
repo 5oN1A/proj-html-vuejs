@@ -1,4 +1,37 @@
+@import "variables";
+
 h1 {
-    font-size: 46px;
-    color: white;
+    font-size: 58px ;
+    color: $white;
+    font-weight: 600;
 }
+h2 {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: 400;
+}
+h6 {
+    font-size: 16px;
+}
+p {
+    font-size: 12px;
+}
+
+.my_btn {
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.my_btn_dark {
+    color: $white;
+    background-color: $btn_grey;
+} 
+
+.my_btn_yellow {
+    color: black;
+    background-color: $yellow;
+} 
