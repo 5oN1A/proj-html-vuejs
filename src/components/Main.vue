@@ -103,19 +103,19 @@
                 <h6>PLANNING APPLICATIONS</h6>
               </div>
               <div class="feature text-center">
-                <i class="fa fa-suitcase" aria-hidden="true"></i>
-                <h1>3534</h1>
-                <h6>PLANNING APPLICATIONS</h6>
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                <h1>896</h1>
+                <h6>COMPLETED PROJECTS</h6>
               </div>
               <div class="feature text-center">
-                <i class="fa fa-suitcase" aria-hidden="true"></i>
-                <h1>3534</h1>
-                <h6>PLANNING APPLICATIONS</h6>
+                <i class="fa fa-users" aria-hidden="true"></i>
+                <h1>172</h1>
+                <h6>TRAINED PROFESSIONALS</h6>
               </div>
               <div class="feature text-center">
-                <i class="fa fa-suitcase" aria-hidden="true"></i>
-                <h1>3534</h1>
-                <h6>PLANNING APPLICATIONS</h6>
+                <i class="fa fa-globe" aria-hidden="true"></i>
+                <h1>19</h1>
+                <h6>INTERNATIONAL OFFICES</h6>
               </div>
             </div>
           </div>
@@ -376,7 +376,7 @@
               <div class="col">
                 <div class="partner">
                   <img
-                    src="..\assets\home-logo11-219096700-320x202.png"
+                    src="..\assets\home-logo10-219096700-320x202.png"
                     alt=""
                   />
                 </div>
@@ -385,7 +385,7 @@
               <div class="col">
                 <div class="partner">
                   <img
-                    src="..\assets\home-logo11-219096700-320x202.png"
+                    src="..\assets\home-logo2-219096700-320x202.png"
                     alt=""
                   />
                 </div>
@@ -394,7 +394,7 @@
               <div class="col">
                 <div class="partner">
                   <img
-                    src="..\assets\home-logo11-219096700-320x202.png"
+                    src="..\assets\home-logo1-219096700-320x202.png"
                     alt=""
                   />
                 </div>
@@ -403,7 +403,7 @@
               <div class="col">
                 <div class="partner">
                   <img
-                    src="..\assets\home-logo11-219096700-320x202.png"
+                    src="..\assets\home-logo9-219096700-320x202.png"
                     alt=""
                   />
                 </div>

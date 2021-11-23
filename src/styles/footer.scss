@@ -1,2 +1,24 @@
 @import "variables";
 
+footer {
+    padding: $length_50 250px ;
+    background-color: $footer_bg;
+
+    .my_btn { 
+        padding: 9px 24px;
+        font-size: 14px;
+    }
+    .theme_fusion {
+        height: 25px;
+        width: 25px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .white-txt {
+        color:$white !important;
+        text-align: justify;
+    }
+    ul {
+        color: $dark_grey;
+    }
+}
