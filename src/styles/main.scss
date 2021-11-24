@@ -99,6 +99,18 @@
     }
 
     .quality {
+        .fa-home {
+            background-color: #4ea4a5;
+        }
+        .fa-cog {
+            background-color: #4e6da5;
+        }
+        .fa-users {
+            background-color: #f7722b;
+        }
+        .fa-lightbulb-o {
+            background-color: #a0ce4e;
+        }
         h6 {
             font-weight: 300;
         }
@@ -136,7 +148,6 @@
 
     .card {
         border: none;
-        text-align: justify;
         color: $dark_grey;
         min-height: 500px;
         border-radius: 0;
@@ -145,9 +156,17 @@
         img {
             border-radius: 0;
         }
-        .card-date {
-            font-size: 10px;
-            text-align: left;
+        .card-body {
+            h3 {
+                text-align: left;
+            }
+            .card-date {
+                font-size: 10px;
+                text-align: left;
+            }
+            p {
+                text-align: justify;
+            }
         }
     }
 }
@@ -170,25 +189,23 @@
 
     .after_line {
         position: relative;
-    
+
         &:after {
-            left:0;
+            left: 0;
             transform: translateX(0);
         }
     }
     h2 {
         color: $white;
-
     }
     h5 {
         color: $white;
         font-weight: 300;
-    
     }
     .my_btn_yellow {
         padding: 14px 40px;
     }
     p {
-        color: $white
+        color: $white;
     }
 }

@@ -25,10 +25,12 @@ header {
             }
             
         }
+        .my_btn_yellow {
+            padding: 14px 40px;
+            margin-left: 20px;
+        }
         }
     }
-    & li:last-child a {
-        background-color: $yellow;
-        padding: 14px 40px;
-    }
+    
+        
 }

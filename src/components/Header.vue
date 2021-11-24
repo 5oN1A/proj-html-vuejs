@@ -1,13 +1,19 @@
 <template>
-   <header>
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+  <header>
+    <div
+      class="container-fluid d-flex align-items-center justify-content-between"
+    >
       <img class="logo" src="../assets/construction_logo.png" alt="" />
-      <nav>
-        <ul class="d-flex">
-          <li v-for="(item, i) in navItems" :key="i" :class="i === currentActive ? 'active' : ''">
-              <a :href="item.href" >{{item.title}}</a>
-            </li>
-          
+      <nav class="pt-4">
+        <ul class="d-flex align-items-center">
+          <li
+            v-for="(item, i) in navItems"
+            :key="i"
+            :class="i === currentActive ? 'active' : ''"
+          >
+            <a :href="item.href">{{ item.title }}</a>
+          </li>
+          <a class="my_btn my_btn_yellow" href="#">GET QUOTE</a>
         </ul>
       </nav>
     </div>
@@ -39,10 +45,6 @@ export default {
         },
         {
           title: "ARTICLES",
-          href: "#",
-        },
-        {
-          title: "GET QUOTE",
           href: "#",
         },
       ],

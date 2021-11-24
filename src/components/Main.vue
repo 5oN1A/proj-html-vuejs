@@ -41,51 +41,8 @@
 
         <div class="row row-cols-4 justify-content-center pb-5">
           <!-- feature -->
-          <div class="col">
-            <div class="block p-3">
-              <div class="icon_wrapper text-center pb-3">
-                <i class="fa fa-building-o" aria-hidden="true"></i>
-              </div>
-              <h2>Buildings</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Eaque deleniti voluptatum eius
-                adipisci, eius adipisci sequi accusamus.
-              </p>
-            </div>
-          </div>
-          <!-- feature -->
-          <div class="col">
-            <div class="block p-3">
-              <i class="fa fa-building-o" aria-hidden="true"></i>
-              <h2>Buildings</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Eaque deleniti voluptatum eius
-                adipisci, sequi accusamus.
-              </p>
-            </div>
-          </div>
-          <!-- feature -->
-          <div class="col">
-            <div class="block p-3">
-              <i class="fa fa-building-o" aria-hidden="true"></i>
-              <h2>Buildings</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Eaque deleniti voluptatum eius
-                adipisci, sequi accusamus.
-              </p>
-            </div>
-          </div>
-          <!-- feature -->
-          <div class="col">
-            <div class="block p-3">
-              <i class="fa fa-building-o" aria-hidden="true"></i>
-              <h2>Buildings</h2>
-              <p>
-                Lorem ipsum dolor sit amet elit. Eaque deleniti voluptatum eius
-                adipisci, sequi accusamus.
-              </p>
-            </div>
-          </div>
+          <Feature v-for="(feature, i) in features" :key="i" :list="feature">
+          </Feature>
         </div>
       </div>
     </section>
@@ -189,51 +146,13 @@
         <div class="row justify-content-center">
           <div class="col-8">
             <div class="row row-cols-4">
-              <!-- QUALITY -->
-              <div class="col">
-                <div class="quality">
-                  <i class="fa fa-home circle-icon" aria-hidden="true"></i>
-                  <h6 class="pt-2 mb-0">Great Services</h6>
-                  <hr class="mb-1" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse vitae eveniet quis rem ut! Pariatur.
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="quality">
-                  <i class="fa fa-home circle-icon" aria-hidden="true"></i>
-                  <h6 class="pt-2 mb-0">Great Services</h6>
-                  <hr class="mb-1" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse vitae eveniet quis rem ut! Pariatur.
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="quality">
-                  <i class="fa fa-home circle-icon" aria-hidden="true"></i>
-                  <h6 class="pt-2 mb-0">Great Services</h6>
-                  <hr class="mb-1" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse vitae eveniet quis rem ut! Pariatur.
-                  </p>
-                </div>
-              </div>
-              <div class="col">
-                <div class="quality">
-                  <i class="fa fa-home circle-icon" aria-hidden="true"></i>
-                  <h6 class="pt-2 mb-0">Great Services</h6>
-                  <hr class="mb-1" />
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse vitae eveniet quis rem ut! Pariatur.
-                  </p>
-                </div>
-              </div>
+              <!-- quality -->
+              <Quality
+                v-for="(quality, i) in qualities"
+                :key="i"
+                :list="quality"
+              >
+              </Quality>
             </div>
           </div>
         </div>
@@ -284,60 +203,13 @@
           <div class="col-8">
             <div class="row row-cols-3 gx-5">
               <!-- CARD -->
-              <div class="col">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="..\assets\blog-post-134132600-400x241.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-date">December 7th, 2015</p>
-                    <hr />
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="..\assets\blog-post-134132600-400x241.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-date">December 7th, 2015</p>
-                    <hr />
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card" style="width: 18rem">
-                  <img
-                    src="..\assets\blog-post-134132600-400x241.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h3 class="card-title">Card title</h3>
-                    <p class="card-date">December 7th, 2015</p>
-                    <hr />
-                    <p class="card-text">
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <Card
+                v-for="(singleNews, i) in news"
+                :key="i"
+                :list="singleNews"
+              >
+              </Card>
+
             </div>
           </div>
           <p class="see-more">VIEW ALL ARTICLES</p>
@@ -417,7 +289,7 @@
     <!-- SECTION 10-->
 
     <section class="section_10">
-      <div class="container">
+      <div class="container my-5">
         <div class="row justify-content-center align-items-center">
           <div class="col-5 text-start">
             <h2 class="py-4 after_line">Building Inspiring Spaces</h2>
@@ -439,13 +311,24 @@
 </template>
 
 <script>
+import Feature from "@/components/Feature.vue";
+import Quality from "@/components/Quality.vue";
+import Card  from "@/components/Card.vue";
+
 export default {
   name: "Main",
-  components: {},
+  props: {
+    features: Array,
+    qualities: Array,
+    news: Array
+  },
+  components: {
+    Feature,
+    Quality,
+    Card
+  },
   data() {
-    return {
-      
-    };
+    return {};
   },
   computed: {},
   methods: {},
