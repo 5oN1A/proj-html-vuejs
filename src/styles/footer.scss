@@ -20,5 +20,15 @@ footer {
     }
     ul {
         color: $dark_grey;
+        p {
+            text-align: left;
+            margin-bottom: 0;
+            line-height: 20px;
+
+        }
+    }
+    
+    .discount {
+        width: 100%;
     }
 }

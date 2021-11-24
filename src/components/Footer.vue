@@ -37,17 +37,31 @@
                 minus quia iure debitis, totam saepe, inventore beatae dicta
                 odio!
               </p>
-              <img src="../assets/discount.png" alt="discount" />
+              <img
+                class="discount"
+                src="../assets/discount.png"
+                alt="discount"
+              />
             </div>
           </div>
         </div>
         <div class="col">
           <h5>CONTACT US TODAY</h5>
           <ul>
-            <li class="d-flex">
-              <i class="fa fa-globe lh-base" aria-hidden="true"></i>
-              <p class="text-start lh-base ps-1 m-0">Corporate Location <br> 1600 Amphitheatre Parkway <br>London WC1 1BA</p>
+
+
+            <li v-for="(contact, i) in contactsList" :key="i" class="d-flex">
+              <i class="fa lh-base " :class="contact.icon" aria-hidden="true"></i>
+              <div class="ms-2 mb-2">
+              <p>{{contact.description}}</p>
+              <p v-if="contact.address">{{contact.address}}</p>
+              <p v-if="contact.city">{{contact.city}}</p>
+              </div>
             </li>
+
+
+
+
           </ul>
         </div>
         <div class="col">
@@ -64,7 +78,40 @@ export default {
   name: "Footer",
   components: {},
   data() {
-    return {};
+    return {
+      contactsList: [
+        {
+          icon: "fa-globe",
+          description: "Corporate Location",
+          address: "1600 Amphitheatre Parkway",
+          city:"London WC1 1BA"
+          
+        },
+        {
+          icon: "fa-home",
+          description: "Residential Location",
+          address:"9521 Broadsberry Avenue",
+          city:"Paddington RC7 9ZA"
+        },
+        {
+          icon: "fa-phone",
+          description: "1.800.458.556 / 1.800.532.2112"
+        },
+        {
+          icon: "fa-phone",
+          description: "info@your-domain.com"
+        },
+        {
+          icon: "fa-clock-o",
+          description: "Monday – Friday: 9:00 AM – 6:00 PM"
+        },
+        {
+          icon: "fa-clock-o",
+          description: "Saturday – Sunday: 9:00 AM – 12:00 PM"
+        },
+
+      ],
+    };
   },
   computed: {},
   methods: {},

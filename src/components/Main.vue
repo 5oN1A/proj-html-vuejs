@@ -40,7 +40,7 @@
         </div>
 
         <div class="row row-cols-4 justify-content-center pb-5">
-          <!-- card -->
+          <!-- feature -->
           <div class="col">
             <div class="block p-3">
               <div class="icon_wrapper text-center pb-3">
@@ -53,7 +53,7 @@
               </p>
             </div>
           </div>
-          <!-- card -->
+          <!-- feature -->
           <div class="col">
             <div class="block p-3">
               <i class="fa fa-building-o" aria-hidden="true"></i>
@@ -64,7 +64,7 @@
               </p>
             </div>
           </div>
-          <!-- card -->
+          <!-- feature -->
           <div class="col">
             <div class="block p-3">
               <i class="fa fa-building-o" aria-hidden="true"></i>
@@ -75,7 +75,7 @@
               </p>
             </div>
           </div>
-          <!-- card -->
+          <!-- feature -->
           <div class="col">
             <div class="block p-3">
               <i class="fa fa-building-o" aria-hidden="true"></i>
@@ -443,7 +443,9 @@ export default {
   name: "Main",
   components: {},
   data() {
-    return {};
+    return {
+      
+    };
   },
   computed: {},
   methods: {},

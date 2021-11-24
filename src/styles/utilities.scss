@@ -1,7 +1,7 @@
 @import "variables";
 
 h1 {
-    font-size: 58px ;
+    font-size: 58px;
     color: $white;
     font-weight: 600;
 }
@@ -24,16 +24,15 @@ h5 {
     color: $yellow;
     font-weight: 700;
     padding-bottom: 20px;
-
 }
 p {
     font-size: 12px;
-    line-height: 25px !important;
+    line-height: 25px;
     text-align: center;
     color: $dark_grey;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -45,12 +44,21 @@ li{
 .my_btn_dark {
     color: $white;
     background-color: $btn_grey;
-} 
+    &:hover {
+        color: black;
+        background-color: $yellow;
+    }
+}
 
 .my_btn_yellow {
     color: black;
     background-color: $yellow;
-} 
+    &:hover {
+        color: $white;
+        background-color: $btn_grey;
+    }
+
+}
 .after_line {
     position: relative;
 
@@ -69,4 +77,5 @@ li{
     letter-spacing: 2px;
     margin: calc($length_30 * 2) 0;
 }
+
 
