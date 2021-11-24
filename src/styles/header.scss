@@ -1,7 +1,7 @@
 @import "variables";
 
 header {
-    padding:15px 250px 30px;
+    padding: 15px 250px 30px;
     background-color: $white;
     .logo {
         height: 85px;
@@ -14,23 +14,19 @@ header {
             li {
                 color: $dark_grey;
 
-            &.active a{
-                color: $yellow;
+                &.active a {
+                    color: $yellow;
+                }
+                a {
+                    text-decoration: none;
+                    color: $dark_grey;
+                    margin: 0 20px;
+                }
             }
-            a {
-                text-decoration: none;
-                color: $dark_grey;
-                margin: 0 20px;
-                
+            .my_btn_yellow {
+                padding: 14px 40px;
+                margin-left: 20px;
             }
-            
-        }
-        .my_btn_yellow {
-            padding: 14px 40px;
-            margin-left: 20px;
-        }
         }
     }
-    
-        
 }

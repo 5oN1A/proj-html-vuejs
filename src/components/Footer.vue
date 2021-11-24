@@ -48,20 +48,18 @@
         <div class="col">
           <h5>CONTACT US TODAY</h5>
           <ul>
-
-
             <li v-for="(contact, i) in contactsList" :key="i" class="d-flex">
-              <i class="fa lh-base " :class="contact.icon" aria-hidden="true"></i>
+              <i
+                class="fa lh-base"
+                :class="contact.icon"
+                aria-hidden="true"
+              ></i>
               <div class="ms-2 mb-2">
-              <p>{{contact.description}}</p>
-              <p v-if="contact.address">{{contact.address}}</p>
-              <p v-if="contact.city">{{contact.city}}</p>
+                <p>{{ contact.description }}</p>
+                <p v-if="contact.address">{{ contact.address }}</p>
+                <p v-if="contact.city">{{ contact.city }}</p>
               </div>
             </li>
-
-
-
-
           </ul>
         </div>
         <div class="col">
@@ -84,32 +82,30 @@ export default {
           icon: "fa-globe",
           description: "Corporate Location",
           address: "1600 Amphitheatre Parkway",
-          city:"London WC1 1BA"
-          
+          city: "London WC1 1BA",
         },
         {
           icon: "fa-home",
           description: "Residential Location",
-          address:"9521 Broadsberry Avenue",
-          city:"Paddington RC7 9ZA"
+          address: "9521 Broadsberry Avenue",
+          city: "Paddington RC7 9ZA",
         },
         {
           icon: "fa-phone",
-          description: "1.800.458.556 / 1.800.532.2112"
+          description: "1.800.458.556 / 1.800.532.2112",
         },
         {
           icon: "fa-phone",
-          description: "info@your-domain.com"
+          description: "info@your-domain.com",
         },
         {
           icon: "fa-clock-o",
-          description: "Monday – Friday: 9:00 AM – 6:00 PM"
+          description: "Monday – Friday: 9:00 AM – 6:00 PM",
         },
         {
           icon: "fa-clock-o",
-          description: "Saturday – Sunday: 9:00 AM – 12:00 PM"
+          description: "Saturday – Sunday: 9:00 AM – 12:00 PM",
         },
-
       ],
     };
   },

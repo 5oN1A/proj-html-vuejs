@@ -123,9 +123,13 @@
                 </div>
               </div>
             </div>
+            <div class="see-more d-flex align-items-center">
+              <div class="line"></div>
+              <p class="px-5 m-0">VIEW ALL PROJECTS</p>
+              <div class="line"></div>
+            </div>
           </div>
         </div>
-        <p class="see-more">VIEW ALL PROJECTS</p>
       </div>
     </section>
 
@@ -201,13 +205,18 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-8">
-            <div class="row row-cols-3 gx-5">
-              <!-- CARD -->
+            <div class="row row-cols-3 gx-3">
+              <!-- card -->
               <Card v-for="(singleNews, i) in news" :key="i" :list="singleNews">
               </Card>
             </div>
+            <div class="see-more d-flex align-items-center">
+              <div class="line"></div>
+              <p class="px-5 m-0">VIEW ALL ARTICLES</p>
+              <div class="line"></div>
+            </div>
           </div>
-          <p class="see-more">VIEW ALL ARTICLES</p>
+          
         </div>
       </div>
     </section>

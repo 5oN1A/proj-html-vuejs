@@ -1,10 +1,10 @@
 @import "variables";
 
 footer {
-    padding: $length_50 250px ;
+    padding: $length_50 250px;
     background-color: $footer_bg;
 
-    .my_btn { 
+    .my_btn {
         padding: 9px 24px;
         font-size: 14px;
     }
@@ -15,7 +15,7 @@ footer {
         border-radius: 50%;
     }
     .white-txt {
-        color:$white !important;
+        color: $white !important;
         text-align: justify;
     }
     ul {
@@ -24,10 +24,9 @@ footer {
             text-align: left;
             margin-bottom: 0;
             line-height: 20px;
-
         }
     }
-    
+
     .discount {
         width: 100%;
     }
