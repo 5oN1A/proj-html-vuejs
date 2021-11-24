@@ -203,13 +203,8 @@
           <div class="col-8">
             <div class="row row-cols-3 gx-5">
               <!-- CARD -->
-              <Card
-                v-for="(singleNews, i) in news"
-                :key="i"
-                :list="singleNews"
-              >
+              <Card v-for="(singleNews, i) in news" :key="i" :list="singleNews">
               </Card>
-
             </div>
           </div>
           <p class="see-more">VIEW ALL ARTICLES</p>
@@ -313,19 +308,19 @@
 <script>
 import Feature from "@/components/Feature.vue";
 import Quality from "@/components/Quality.vue";
-import Card  from "@/components/Card.vue";
+import Card from "@/components/Card.vue";
 
 export default {
   name: "Main",
   props: {
     features: Array,
     qualities: Array,
-    news: Array
+    news: Array,
   },
   components: {
     Feature,
     Quality,
-    Card
+    Card,
   },
   data() {
     return {};
